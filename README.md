@@ -10,4 +10,4 @@ Step-2:   Open terminal in VSCode.
 Step-3:   Enter "pipenv install Django".
 Step-4:   Enter "pipenv shell".
 Step-5:   Enter "cd pass_ver".
-Step-6:   Enter "puthon3 manage.py runserver".
+Step-6:   Enter "python3 manage.py runserver".
