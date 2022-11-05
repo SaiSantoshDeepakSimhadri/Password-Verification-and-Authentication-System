@@ -2,7 +2,7 @@
 A simple user registration and login system with admin access to manage and monitor user accounts.
 
 Softwares required:
-Visual Studio Code , Python,
+Visual Studio Code , Python.
 
 Procedure to implement the project:
 Step-1:   Open the downloaded files on VSCode.
