@@ -11,3 +11,7 @@ Step-3:   Enter "pipenv install Django".
 Step-4:   Enter "pipenv shell".
 Step-5:   Enter "cd pass_ver".
 Step-6:   Enter "python3 manage.py runserver".
+
+Login Credentials for Django Administrator:
+Username:   admin
+Password:   admin
