@@ -1,0 +1,121 @@
+.contents {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0px 2px 20px 2px rgb(63, 62, 62);
+    width: 500px;
+    padding: 60px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    text-align: center;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px 2px rgb(63, 62, 62);
+    width: 320px;
+    padding: 50px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    text-align: center;
+}
+#contents1 {
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0px 2px 20px 2px rgb(63, 62, 62);
+    width: 320px;
+    padding: 50px;
+    margin: auto;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    text-align: center;
+}    
+h1 {
+    text-align: left;
+    padding-left: 11%;
+    font-family: Helvetica, sans-serif;
+}
+Body {  
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 231, 231);  
+}  
+.box{
+    height: 40;
+    font-size: 13;
+    border-radius: 2px;
+    justify-content: center;
+}
+.button {
+    width: 200px; 
+    height: 50px; 
+    border: 2px solid #ce8d01;
+    font-size: 18px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    background-color: rgb(226, 186, 84);
+}
+.button:hover {
+    background-color: gold;
+}
+.box:hover {
+    border: 2px solid #1e9fc3;
+}
+#home{
+    color: white;
+}
+#home:hover{
+    color: blue;
+}
+a{
+    color: blue;
+}
+a:active{
+    color: red;
+}
+#bgi{
+    background-repeat: no-repeat;  
+    background-position: top;
+    background-size: 1450px 900px;
+    background-attachment: fixed;
+}
+.dash{
+    color: white;
+    text-align: right;
+}
+.pass-cont{
+    width: 300px;
+    position: relative;
+}
+.pass-contain{
+    width: 300px;
+    position: relative;
+    margin-left: 1.1cm;
+}
+#eye1{
+    position: absolute;
+    top: 28%;
+    right: -6%;
+    cursor: pointer;
+    color: rgb(0, 157, 255);
+}
+#eye{
+    position: absolute;
+    top: 28%;
+    right: -35%;
+    cursor: pointer;
+    color: rgb(0, 157, 255);
+}
+.fa-eye:hover{
+    text-shadow: #00e5ff 1px 0 10px;
+}

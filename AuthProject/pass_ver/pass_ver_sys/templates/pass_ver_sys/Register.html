@@ -1,0 +1,45 @@
+<html>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <head>
+        {% load static %}        
+        <link rel="stylesheet" href="{% static 'css/cstyles.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Password Verification and Authentication System Sign Up</title>
+    </head>
+    <body id='bgi'style="background-image: url('{% static 'img/registerpage.jpg' %}');">
+        <form action="" method="post">       
+            {% csrf_token %}
+            <div class="contents">
+                <h1>Sign Up</h1><br><br>
+                <input class="box" type="text" size="50" name = "First_name" placeholder="First Name"><br><br>
+                <input class="box" type="text" size="50" name = "Last_name" placeholder="Last Name"><br><br>
+                <input class="box" type="text" size="50" name = "Email" placeholder="Email"><br><br>
+                <input class="box" type="text" size="50" placeholder="Username" id="Username" name="Username"><br><br>
+                <div class="pass-contain">
+                    <input class="box" type="password" size="50" placeholder="Password(should contain all kinds of characters)" name="Password" id="Password">
+                    <i class="fa fa-eye" id="eye" onclick="toggle()"></i>
+                </div>
+                <br>
+                <input class="box" type="password" size="50" placeholder="Confirm Password" id="CPassword" name="CPassword"><br><br><br>
+                <a href="{% url 'Login' %}" target="_blank"><input class="button" type="submit" value="Sign Up"/></a>
+                <pre style="font-family:Calibri">Already a user?     <a href="{% url 'Login' %}" target="_blank" ><i><u>Sign In</u></i></a></pre>      
+                <pre style="font-family:Calibri">Are you an Admin?     <a href="{% url 'admin' %}" target="_blank" ><i><u>Admin Login</u></i></a></pre>              
+            </div>
+        </form>
+        <script>
+            var state = false;
+            function toggle(){
+                if(state){
+                    document.getElementById("Password").setAttribute("type","Password");
+                    document.getElementById("eye").style.color='rgb(0, 157, 255)'
+                    state = false;
+                }
+                else{
+                    document.getElementById("Password").setAttribute("type","text");
+                    document.getElementById("eye").style.color='#5887ef'
+                    state = true;
+                }
+            } 
+        </script>
+    </body>
+</html>

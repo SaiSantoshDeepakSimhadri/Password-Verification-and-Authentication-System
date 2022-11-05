@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/cstyles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body id='bgi'style="background-image: url('{% static 'img/homepage.jpg' %}');">
+    <div id="contents1" class="contents1">
+        <center><h2><b><i> Home Page</i></b></h2></center><br><br>
+        <p>New user? <br><button class="button"><i><a id="home" href="{% url 'Register' %}">register</a></i></button></p><br>
+        <p>Already a user? <br><button class="button"><i><a id="home" href="{% url 'Login' %}">login</a></i></button></p><br>
+        <p>Are you an Admin?<br> <button class="button"><i><a id ="home" href="{% url 'admin' %}">Admin login</a></i></button></p><br>
+    </div>
+</body>
+</html>

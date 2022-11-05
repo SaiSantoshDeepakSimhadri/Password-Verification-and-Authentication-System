@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}     
+    <link rel="stylesheet" href="{% static 'css/cstyles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body id='bgi'style="background-image: url('{% static 'img/dashboard.jpg' %}');">
+    <p class="dash">Logged in as {{user.first_name}} {{user.last_name}}    <br><i><a class="dash1" href="{% url 'Logout' %}">logout</a></i></p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <head>
+        {% load static %}        
+        <link rel="stylesheet" href="{% static 'css/cstyles.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Password Verification and Authentication System Sign In</title>
+        </head>
+    <body id='bgi'style="background-image: url({% static 'img/login.jpg' %});">
+        <form action="" method="post"> 
+            {% csrf_token %}      
+            <div class="container">
+                <h1>Sign In</h1><br><br>
+                <input class="box"  type="text" size="40" placeholder="Username" id="Username" name="Username"><br><br>
+                <div class="pass-cont">
+                    <input class="box"  type="password" size="40" placeholder="Password" name="Password" id="Password">
+                    <i class="fa fa-eye" id="eye1" onclick="toggle()"></i>
+                </div><br><br>
+                <input class="button" type="submit" value="Sign In">
+                <pre style="font-family:Calibri">New user?     <a href="{% url 'Register' %}" target="_blank" ><i><u>Sign up</u></i></a></pre>                
+                <pre style="font-family:Calibri">Are you an Admin?     <a href="{% url 'admin' %}" target="_blank" ><i><u>Admin Login</u></i></a></pre>              
+            </div>
+            <script>
+                var state = false;
+                function toggle(){
+                    if(state){
+                        document.getElementById("Password").setAttribute("type","Password");
+                        document.getElementById("eye1").style.color='rgb(0, 157, 255)'
+                        state = false;
+                    }
+                    else{
+                        document.getElementById("Password").setAttribute("type","text");
+                        document.getElementById("eye1").style.color='#5887ef'
+                        state = true;
+                    }
+                } 
+            </script>
+        </form>
+    </body>
+</html>
